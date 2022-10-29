@@ -1,0 +1,19 @@
+{
+  "name": "audiophile_full_stack",
+  "version": "1.0.0",
+  "description": "Audiophile Ecommerce shopping app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server"
+  },
+  "author": "Luci Van Tangent",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
