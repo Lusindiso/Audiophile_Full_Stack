@@ -1,16 +1,25 @@
 * {
-  box-sizing: inherit;
-  padding: 0;
-  margin: 0;
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
 }
 
 html {
-  font-size: 62.5%;
-  box-sizing: border-box;
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
 }
 
 .container {
-		max-width:82vw;
-		margin: 0 auto;
+	max-width: 82vw;
+	margin: 0 auto;
+}
 
+@media screen and (max-width: 960px) and (min-width: 768px) {
+	html {
+		font-size: 56.25%;
 	}
+}

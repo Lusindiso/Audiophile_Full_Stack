@@ -1,6 +1,12 @@
+import About from "../UI/About";
+import Categories from "../UI/Categories";
+
 const Home = () => {
 	return (
-		<div>Home</div>
+		<>
+			<Categories />
+			<About />
+		</>
 	);
 };
 export default Home;
