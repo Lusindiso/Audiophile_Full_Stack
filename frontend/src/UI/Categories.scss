@@ -2,7 +2,12 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 4vw;
-	margin: 5rem auto;
+	margin-top: 10rem;
+
+	a {
+		text-decoration: none;
+		color: black;
+	}
 
 	@media screen and (max-width: 767px) {
 		grid-template-columns: 1fr;
@@ -11,11 +16,22 @@
 	}
 
 	.category {
+		&--image {
+			display: flex;
+			justify-content: center;
+			margin-bottom: -14.5rem;
+
+			img {
+				width: 25rem;
+			}
+		}
+
 		&--text {
 			background-color: rgb(241, 241, 241);
 			text-align: center;
+			text-transform: uppercase;
 			border-radius: 10px;
-			padding-top: 5rem;
+			padding-top: 10rem;
 			padding-bottom: 2rem;
 
 			h3 {
@@ -25,13 +41,20 @@
 			}
 
 			p {
-				font-size: 1.5rem;
+				font-size: 1.6rem;
 				padding: 0 2rem;
 				display: flex;
 				align-items: center;
+				justify-content: center;
 
 				span {
 					opacity: 0.5;
+					padding-right: 1.4rem;
+					font-weight: bold;
+				}
+
+				img {
+					height: 1.6rem;
 				}
 			}
 		}
