@@ -3,9 +3,9 @@ import Product from './Product';
 import './Products.scss';
 
 const Products = (props) => {
-	const products = useSelector(products => products.products.products);
+	const products = useSelector((state) => state.products.products);
+	console.log(products);
 	const productsDisplay = products.filter(product => product.category === props.category);
-	console.log(productsDisplay);
 	return (
 		<section className="products">
 			{productsDisplay.map(product => <Product product={product} key={product._id} />)}
@@ -13,4 +13,4 @@ const Products = (props) => {
 		</section>
 	);
 };
-export default Products;;;;
+export default Products;

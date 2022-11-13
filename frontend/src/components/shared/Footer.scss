@@ -8,6 +8,8 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
+			margin-bottom: 3rem;
+
 
 		&__logo {
 			border-top: 5px rgb(216, 125, 74) solid;
@@ -17,16 +19,24 @@
 				opacity: 0.7;
 			}
 		}
+
+		&__navbar {
+			margin-bottom: 0.8rem;
+		}
 	}
 
 	&-about {
-		max-width: 50rem;
+		max-width: 56rem;
 		margin-left: 0;
 		text-align: left;
+		
 	}
 
 	&--bottom {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin-bottom: 5rem;
+
 	}
 }

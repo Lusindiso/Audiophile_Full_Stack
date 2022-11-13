@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Nav from './Nav';
 import './Navbar.scss';
 import Logo from '../../assets/logo.svg';
+import Cart from '../../assets/icon-cart.svg';
 
 
 const Navbar = () => {
@@ -16,8 +17,9 @@ const Navbar = () => {
 				</div>
 				<Nav />
 				<div className="navbar--right">
-					<div className="profile">pr</div>
-					<div className="cart">cart</div>
+					<div className="cart">
+						<img src={Cart} alt="cart" />
+					</div>
 				</div>
 			</div>
 
