@@ -1,6 +1,64 @@
 .product {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 5rem;
+	margin: 15rem auto;
+	align-items: center;
+
+	@media screen and (min-width: 768px) {
+		height: 55vh;
+		overflow: hidden;
+	}
+	@media screen and (max-width: 767px) {
+		grid-template-columns: 1fr;
+		grid-auto-rows: repeat(2, 1fr);
+		text-align: center;
+	}
+
 	&:nth-child(2n) {
-		flex-direction: row-reverse;
+		grid-column: 1;
+	}
+
+	&--image {
+		overflow: hidden;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+
+	&--details {
+		p:nth-child(1) {
+			font-size: 1.5rem;
+			text-transform: uppercase;
+			font-weight: bold;
+			color: rgb(216, 125, 74);
+			letter-spacing: 0.9rem;
+			margin-bottom: 5px;
+		}
+
+		h2 {
+			font-size: 4.5rem;
+			margin-bottom: 3rem;
+			max-width: 50rem;
+			font-weight: 600;
+			line-height: 1.2;
+
+			@media screen and (max-width: 767px) {
+				margin: 3rem auto;
+			}
+		}
+
+		.desc {
+			margin: 3rem 0;
+			font-size: 1.6rem;
+			max-width: 70rem;
+			opacity: 0.5;
+
+			@media screen and (max-width: 767px) {
+				margin-bottom: 3rem;
+			}
+		}
 	}
 }

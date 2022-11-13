@@ -13,7 +13,7 @@ const Hero = () => {
           </h2>
           <p>Experience natural, life like audio and exceptional build quality made for the passionate music enthusiast.</p>
 
-          <Link className="hero-btn">See product</Link>
+          <Link className="btn-orange">See product</Link>
 
         </div>
       </div>
