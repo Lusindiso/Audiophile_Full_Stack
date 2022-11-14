@@ -20,6 +20,18 @@ body {
 	margin: 0 auto;
 }
 
+.btn {
+	padding: 1.5rem 3rem;
+	border-radius: 2px;
+	font-size: 1.5rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: inline-block;
+	color: inherit;
+	margin: 2rem 0;
+}
+
 .btn-orange {
 	padding: 1.5rem 3rem;
 	background-color: rgb(216, 125, 74);

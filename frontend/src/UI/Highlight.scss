@@ -1,27 +1,82 @@
-.highlight{
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-    margin: 10rem auto;
+.highlight {
+	display: grid;
+	margin: 8rem auto;
+	gap: 10rem;
 
+	&--items:nth-child(1) {
+		display: grid;
+		align-items: center;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 5rem;
+		background-color: rgb(216, 125, 74);
+		border-radius: 10px;
+		height: 50vh;
+		color: white;
+		padding: 5rem 0 0 6vw;
 
-  &--items:nth-child(1){
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
-    background-color: rgb(216, 125, 74);
-    border-radius: 10px;
-    height: 50vh;
+		img {
+			height: 40vh;
+		}
 
-    img{
-      height: 40vh;
+		h2 {
+			font-size: 5rem;
+			margin: 5rem 0;
+			font-weight: 600;
+		}
 
-    }
+		a {
+			background-color: rgba(25, 25, 25, 255);
+		}
+	}
 
-    h2{
-      font-size: 5rem;
-      margin: 5rem;
-      color: white;
-    }
+	&--items:nth-child(2) {
+		background: url('../assets/image-speaker-zx7.jpg') no-repeat;
+		background-size: cover;
+		height: 30vh;
+		border-radius: 10px;
+		padding: 5rem 0 0 6vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
 
-  }
+		h2 {
+			font-size: 3.5rem;
+			font-weight: 600;
+		}
+
+		a {
+			border: 1px solid rgba(25, 25, 25, 255);
+		}
+	}
+	&--items:nth-child(3) {
+		display: grid;
+		align-items: center;
+		grid-template-columns: repeat(2, 1fr);
+		height: 35vh;
+		gap: 4vw;
+
+		> div:first-child {
+			background: url('../assets/image-earphones-home.jpg') no-repeat;
+			background-size: cover;
+			height: 100%;
+			border-radius: 10px;
+		}
+
+		> div:last-child {
+			background: rgb(241, 241, 241);
+			border-radius: 10px;
+			height: 100%;
+			padding: 10vh 5vw;
+		}
+
+		h2 {
+			font-size: 3.5rem;
+			font-weight: 600;
+		}
+
+		a {
+			border: 1px solid rgba(25, 25, 25, 255);
+		}
+	}
 }

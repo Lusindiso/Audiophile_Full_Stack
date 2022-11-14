@@ -15,8 +15,15 @@
 		text-align: center;
 	}
 
-	&:nth-child(2n) {
-		grid-column: 1;
+	@media screen and (min-width: 768px) {
+		&:nth-child(2n) > div:last-child {
+			grid-column: 1;
+			grid-row: 1;
+		}
+
+		&:nth-child(2n) > div:first-child {
+			grid-column: 2;
+		}
 	}
 
 	&--image {
